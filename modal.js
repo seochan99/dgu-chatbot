@@ -34,14 +34,8 @@ function openModal() {
     if (isMobile) {
         window.open(modalURL, "_blank");
     } else {
-        showLoadingScreen(); // 로딩 화면 표시
-
         // 모달 창의 iframe 로딩이 완료된 후에 로딩 화면을 숨김
-        document
-            .getElementById("modal-iframe")
-            .addEventListener("load", function () {
-                hideLoadingScreen();
-            });
+        document.getElementById("modal-iframe");
 
         document.getElementById("modal").style.display = "block";
         document.getElementById("floating-button").style.display = "none";

@@ -29,7 +29,8 @@ body{
   border-radius: 6px;
   font-weight: 500;
 }
-  #modal {
+
+#modal {
   display: none;
   position: fixed;
   width: 20%;
@@ -49,7 +50,7 @@ animation: fadeIn 1s ease-in-out;
   height: 100%;
 }
 
-  .modal {
+.modal {
     display: none;
     position: fixed;
     top: 50%;
@@ -63,9 +64,33 @@ animation: fadeIn 1s ease-in-out;
   .modal.active {
     display: block;
   }
+
   
+  @media screen and (max-width: 1200px) {
+    #modal {
+      display: none;
+      position: fixed;
+      width: 30%;
+      height: 40%;
+      max-width: 500px;
+      max-height: 500px;
+      
+    }
+  }
+    
+
 /* 모바일화면 */
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 768px) {
+  #modal {
+    display: none;
+    position: fixed;
+    width: 45%;
+    height: 40%;
+    max-width: 1000px;
+    max-height: 500px;
+    
+  }
     .banner {
       width: 30%;
     }
