@@ -91,8 +91,20 @@ animation: fadeIn 1s ease-in-out;
     max-height: 500px;
     
   }
-    .banner {
-      width: 30%;
-    }
   }
     
+  @media screen and (max-width: 500px) {
+    #modal {
+      display: none;
+      position: fixed;
+      width: 45%;
+      height: 40%;
+      max-width: 1000px;
+      max-height: 500px;
+      
+    }
+      .banner {
+        width: 30%;
+      }
+    }
+ 
